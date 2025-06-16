@@ -1,0 +1,26 @@
+# System Settings
+
+The system settings are accessed by pressing the {guilabel}`FUNCTION` button
+for at least 2 seconds.
+
+## Pitch CV option
+
+By default, the {guilabel}`PITCH` CV is not tracking musical pitch and the entire kick octave
+can be CV controlled using for example a LFO with a ±5V output range.
+
+Bohm can pitch track the kick octave using Volt/Octave. This options then allows
+to select the 1V voltage range to map to the octave, either 0..1V, 1..2V or 2..3V.
+
+## ATTVERT 2 option
+
+By default, the {guilabel}`SUSTAIN` attenuverter is mapped to the {guilabel}`SUSTAIN` CV.
+It is however possible to map it instead to the {guilabel}`VELOCITY` CV.
+
+## Shop Mode option
+
+By default, the module will remember the last model used, as well as all variations
+settings of the last 12 models used.
+
+By turning on the Shop Mode option, one can prevent that, allowing a shop owner
+to reset the module in the same condition for customers to have the same
+initial experience with the module. 
