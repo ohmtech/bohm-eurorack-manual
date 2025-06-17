@@ -28,6 +28,15 @@ everything using this option:
 - `B+G`: Randomize only Bohm and Groove
 
 
+## Scrn Saver option
+
+By default, the screen saver option is `ON`, as it is important to maximize the
+lifetime of your Bohm OLED screen. However in some situations it might
+undesirable, for example when shooting a video or during a live
+performance.
+The screen saver can therefore be turned `OFF` to accomodate those cases.
+
+
 ## Shop Mode option
 
 By default, the module will remember the last model used, as well as all variations
