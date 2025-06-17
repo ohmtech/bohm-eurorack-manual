@@ -163,11 +163,16 @@ All Bohm models are all sweet spots, so randomization is a must to quickly
 find the sound you want or get some new inspiration.
 
 To randomize the current model variations, navigate to the end of the model
-variations list to the `RANDOMIZE` menu item
-and click {guilabel}`FUNCTION` to randomize all variations.
+variations list to the `RANDOMIZE` sub menu, and then choose between
+the two randomization options:
 
-In Producer mode, the {guilabel}`FUNCTION` CV input will have the same effect
-as clicking the `RANDOMIZE` menu item.
+- `BOHM + GROOVE` will randomize only Bohm and Groove
+- `ALL` will randomize Bohm, Groove and Performer
+
+In Studio mode, the {guilabel}`FUNCTION` CV input will randomize the current
+model variations. One can also exclude Performer from randomization
+using the `FUNC RAND` option of the system setings.
+
 
 ### Bohm Common Variations
 

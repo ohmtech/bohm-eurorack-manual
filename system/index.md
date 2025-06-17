@@ -11,10 +11,22 @@ can be CV controlled using for example a LFO with a ±5V output range.
 Bohm can pitch track the kick octave using Volt/Octave. This options then allows
 to select the 1V voltage range to map to the octave, either 0..1V, 1..2V or 2..3V.
 
+
 ## ATTVERT 2 option
 
 By default, the {guilabel}`SUSTAIN` attenuverter is mapped to the {guilabel}`SUSTAIN` CV.
 It is however possible to map it instead to the {guilabel}`VELOCITY` CV.
+
+
+## Func Rand option
+
+By default, the {guilabel}`FUNCTION` trigger in Studio mode will randomize only
+the Bohm and Groove (_ie._ not the performer). It is possible to randomize
+everything using this option:
+
+- `ALL`: Randomize Bohm, Groove and Performer
+- `B+G`: Randomize only Bohm and Groove
+
 
 ## Shop Mode option
 
