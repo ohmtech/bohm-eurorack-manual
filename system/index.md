@@ -28,6 +28,15 @@ everything using this option:
 - `B+G`: Randomize only Bohm and Groove
 
 
+## Perf FX option
+
+By default, activating or deactivating the Performer FX section is synced to
+{guilabel}`HIT`. It is also possible to toggle it immediately:
+
+- `INSTANT`: Toggle FX section immediately
+- `SYNCED`: Sync FX to next {guilabel}`HIT`
+
+
 ## Scrn Saver option
 
 By default, the screen saver option is `ON`, as it is important to maximize the
