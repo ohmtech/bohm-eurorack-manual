@@ -1,4 +1,4 @@
-# Core Model Library
+# Core Models Library
 
 ```{image} fm-2x.png
 :width: 20%
@@ -10,7 +10,7 @@ The FM-2X model is a 2-operator carrier/modulator FM kick.
 The carrier is a sub-bass oscillator
 with frequency controlled by {guilabel}`PITCH` and its {guilabel}`CURVE`,
 and amplitude controlled by {guilabel}`ATTACK`, {guilabel}`SUSTAIN`, {guilabel}`LENGTH` and {guilabel}`VELOCITY`
-as described in the "Functions" chapter.
+as described in the {doc}`/functions/index` chapter.
 
 The carrier operator itself is a wavetable oscillator, and {guilabel}`COLOR`
 controls the wavetable position:
@@ -59,7 +59,7 @@ The HZ-1 model is a wavetable oscillator kick combined with a transient synthesi
 
 The wavetable oscillator is frequency-controlled by {guilabel}`PITCH` and its {guilabel}`CURVE`,
 and amplitude-controlled by {guilabel}`ATTACK`, {guilabel}`SUSTAIN`, {guilabel}`LENGTH` and {guilabel}`VELOCITY`
-as described in the "Functions" chapter.
+as described in the {doc}`/functions/index` chapter.
 
 The {guilabel}`COLOR` parameter controls the amount and duration
 of high frequency transients produced, by varying the wavetable position:
@@ -155,7 +155,7 @@ It tends to sound "harder" and "more experimental" than most other models.
 
 The wavetable oscillator is frequency-controlled by {guilabel}`PITCH` and its {guilabel}`CURVE`,
 and amplitude-controlled by {guilabel}`ATTACK`, {guilabel}`SUSTAIN`, {guilabel}`LENGTH` and {guilabel}`VELOCITY`
-as described in the "Functions" chapter.
+as described in the {doc}`/functions/index` chapter.
 
 The {guilabel}`COLOR` parameter controls a function which modulates the wavetable position.
 
@@ -178,7 +178,7 @@ with drum layering samples made from synthesized transients (FM hihats and FM sn
 
 The wavetable oscillator is frequency-controlled by {guilabel}`PITCH` and its {guilabel}`CURVE`,
 and amplitude-controlled by {guilabel}`ATTACK`, {guilabel}`SUSTAIN`, {guilabel}`LENGTH` and {guilabel}`VELOCITY`
-as described in the "Functions" chapter.
+as described in the {doc}`/functions/index` chapter.
 
 The {guilabel}`COLOR` parameter controls the amount and duration
 of high frequency transients produced, by varying the wavetable position:
@@ -204,7 +204,7 @@ The VX-T model is a wavetable oscillator kick combined with a transient synthesi
 
 The wavetable oscillator is frequency-controlled by {guilabel}`PITCH` and its {guilabel}`CURVE`,
 and amplitude-controlled by {guilabel}`ATTACK`, {guilabel}`SUSTAIN`, {guilabel}`LENGTH` and {guilabel}`VELOCITY`
-as described in the "Functions" chapter.
+as described in the {doc}`/functions/index` chapter.
 
 The {guilabel}`COLOR` parameter controls the amount and duration
 of high frequency transients produced, by varying the wavetable position:
@@ -236,7 +236,7 @@ with drum layering samples made from synthesized transients (FM hihats and FM sn
 
 The wavetable oscillator is frequency-controlled by {guilabel}`PITCH` and its {guilabel}`CURVE`,
 and amplitude-controlled by {guilabel}`ATTACK`, {guilabel}`SUSTAIN`, {guilabel}`LENGTH` and {guilabel}`VELOCITY`
-as described in the "Functions" chapter.
+as described in the {doc}`/functions/index` chapter.
 
 The {guilabel}`COLOR` parameter controls the amount and duration
 of high frequency transients produced, by varying the wavetable position:
@@ -283,7 +283,7 @@ Additionally, a maximum of 256 samples can be loaded, or until the sample
 
 The wavetable oscillator is frequency-controlled by {guilabel}`PITCH` and its {guilabel}`CURVE`,
 and amplitude-controlled by {guilabel}`ATTACK`, {guilabel}`SUSTAIN`, {guilabel}`LENGTH` and {guilabel}`VELOCITY`
-as described in the "Functions" chapter.
+as described in the {doc}`/functions/index` chapter.
 
 The wavetable waveform itself can be changed using the `WT` model variation menu,
 and will display the loaded wavetables of the user.
