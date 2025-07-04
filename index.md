@@ -1,6 +1,12 @@
 # Bohm Eurorack Manual
 
-Bohm is a stereo dual-voice Eurorack kick module.
+Bohm is a stereo dual-voice Eurorack kick set of modules.
+
+```{note}
+To update Bohm to the latest firmware version, please visit {doc}`/update/index`.
+
+To calibrate Groove and/or Performer expanders after your purchase, please visit {doc}`/calibration/index`.
+```
 
 ```{image} BohmAll.jpg
 :width: 100%
