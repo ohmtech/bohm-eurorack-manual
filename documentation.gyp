@@ -44,6 +44,7 @@
 
             'system/index.md',
             'update/index.md',
+            'calibration/index.md',
             'factory/index.md',
             'changelog/index.md',
             'licenses/index.md',
