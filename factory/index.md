@@ -1,21 +1,25 @@
-# Factory Mode
+# Functional Test Mode
 
-Depending on electrical conditions or ambiant temperature, your module CV and knobs might be slightly off and might require recalibration.
-You might have also bought the Groove or Performer expanders, and calibration ensures that those expanders are running with optimal performance.
+Should you have a problem with the modules, our support team will ask you to run "test mode" to have a rough idea of what the problem is.
+This mode is also the mode used in factory to functionally test and calibrate the
+modules before they are delivered to you.
 
-Also, should you have a problem with the module, our support team will ask you to run "test mode" to have a rough idea of what the problem is.
+This operation requires a bit of care because you will need to access the back
+of your module while turning the module on, in order to access test mode.
 
-This operation requires a bit of care because the module will need to be powered by your Eurorack case in order to complete successfully. You will also need a simple LFO and VCO.
-For test mode or when recalibrating the central Bohm module, a stable 3V voltage source is also required.
+As for equipement, you will need:
 
-## Entering Test Mode and Calibration
+- A simple LFO and VCO
+- A stable 3V voltage source such as one coming from a Volt/Octave device (an external or Eurorack device, such as the Arturia Beatstep Pro or Intellijel µMIDI or equivalent will do)
 
-To enter test mode and calibration:
+
+## Entering Test Mode
+
+To enter test mode:
 
 1. **Turn off** your Eurorack system
 1. **Remove all the Eurorack patch cables** connected to the module
 1. Remove the module from the rack, but **keep its power cord attached**
-1. Place the module on a **non-conductive surface**
 1. **Press** the {guilabel}`FLASH_SW` button at the top, between the two printed circuit boards of the module, **keep it pressed**, and **turn on** your Eurorack system. The test mode welcome screen will appear
 1. Press {guilabel}`FUNCTION`, the screen will turn entirely white. Check that the screen is working properly, and press {guilabel}`FUNCTION` again
 
@@ -29,10 +33,10 @@ PERFORMER
 
 Make sure that all your expanders appear in that list. Then:
 
-- To only calibrate the expanders, click the {guilabel}`FUNCTION` button
-- To calibrate all modules or if test mode is required, press the {guilabel}`FUNCTION` button for at least 1 second
+- To only test the expanders, click the {guilabel}`FUNCTION` button
+- To test all the modules, press the {guilabel}`FUNCTION` button for at least 1 second
 
-## Calibrating Expanders
+## Testing Expanders
 
 If the Groove expander is present:
 
@@ -64,12 +68,9 @@ which means that your module is in specs (no problem were found) and calibration
 
 You can now turn off your Eurorack system, and reinstall the module into your rack.
 
-## Test Mode
+## Testing All Modules
 
-The full test mode is only required if requested from our support team, or if
-electrical conditions or ambiant temperature necessitated it.
-
-It is completely similar to the expanders calibration, except the central
+It is completely similar to the expanders test, except the central
 Bohm module will be also tested and calibrated. For this reason you will need,
 on top of the LFO/VCO requirements for the expanders, a stable 3V voltage source.
 
