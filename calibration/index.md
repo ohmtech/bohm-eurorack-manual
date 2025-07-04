@@ -15,6 +15,15 @@ Configuring the Bohm module requires an Eurorack-compatible device that can prod
 for {guilabel}`PITCH` CV calibration, typically a Volt/Octave device such
 as the Arturia Beatstep Pro or the Intellijel µMIDI Eurorack module.
 
+The video below shows how to calibrate the Groove and Performer expanders.
+The entire operation takes a little bit more than 1 minute.
+
+```{youtube} pTN_Q4WiiRo
+:width: 100%
+```
+
+The rest of this chapter is a textual version of it.
+
 
 ## Entering Calibration Mode
 
