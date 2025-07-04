@@ -11,6 +11,7 @@ Bohm is a stereo dual-voice Eurorack kick module.
 - **{doc}`/specifications/index`**
 - **{doc}`/overview/index`**
 - **{doc}`/functions/index`**
+- **{doc}`/library/index`**
 - **{doc}`/modes/index`**
 - **{doc}`/system/index`**
 - **{doc}`/update/index`**
