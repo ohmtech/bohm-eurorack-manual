@@ -30,6 +30,6 @@ You can skip this section if you didn't purchase the Bohm Groove or Performer ex
 :align: center
 ```
 
-If you have bought one of the Groove or Performer expander, you might want to
-calibrate the expander for optimal performance, as explained in the
-Factory Mode chapter.
+If you have bought one of the Groove or Performer expanders, you might want to
+calibrate them for optimal performance, as explained in the
+{doc}`/calibration/index` chapter.

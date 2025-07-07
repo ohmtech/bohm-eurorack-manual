@@ -13,7 +13,7 @@ amount of model FM-2X in order to bring "more attack", but some other models wou
 more traditional ADSR envelope to achieve a similar effect.
 
 Therefore, the following describes the most commonly shared features of all
-models. In any case, the "Core Library" chapter describes in more details
+models. In any case, the {doc}`/library/index` chapter describes in more details
 all those models.
 
 
