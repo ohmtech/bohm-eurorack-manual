@@ -30,6 +30,12 @@ The optional **Groove** expander is a second kick voice triggered by the
 {guilabel}`CLOCK` input. The Groove {guilabel}`VOL` allows to balance the
 Groove secondary kick voice with the Bohm first kick voice.
 
+```{important}
+The optional **Groove** expander second kick voice needs to be triggered with the
+{guilabel}`CLOCK` input. This is typically done with, but not limited to,
+a traditional 16th note Eurorack clock.
+```
+
 Both signal enters the optional **Performer** expander. The Performer
 {guilabel}`VOL` allows to balance the Bohm and Groove kick voices with the
 Performer audio {guilabel}`IN`. Both signals enter the effect section, and
