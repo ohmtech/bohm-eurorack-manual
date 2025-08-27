@@ -214,6 +214,10 @@ Only the variations of the snapshot are reloaded (_ie._ not the knob positions).
 - `BITCRUSH` (on a few selected models) is a bit crusher distortion
 - `DECIM` (on a few selected models) is a sampling rate reduction distortion
 
+#### `STEREO`
+
+`STEREO` controls the stereo width of the Bohm signal, from `0%` (mono), to `100%` (full stereo)
+
 ### Groove Variations
 
 #### `FX`
@@ -222,6 +226,10 @@ Only the variations of the snapshot are reloaded (_ie._ not the knob positions).
 - `HP` sets the Groove effect to a high-pass filter. The {guilabel}`FX` parameter then controls the cut-off frequency of the filter
 - `BP` sets the Groove effect to a band-pass filter. The {guilabel}`FX` parameter then controls the center frequency of the filter
 - `DIST` sets the Groove effect to a distortion. The {guilabel}`FX` parameter then controls the gain of the distortion
+
+#### `STEREO`
+
+`STEREO` controls the stereo width of the Groove signal, from `0%` (mono), to `100%` (full stereo)
 
 ### Performer Variations
 
@@ -234,12 +242,9 @@ Only the variations of the snapshot are reloaded (_ie._ not the knob positions).
 - `BEAT ROLL` sets the Performer effect to a beat roll. The {guilabel}`FX` parameter controls the amount of beat roll, from beat-synchronized counterclockwise to stuterring effects as the knob is turned clockwise
 - `SLIP ROLL` sets the Performer effect to a slip roll. It is the same as the beat roll, except the input is resampled on every {guilabel}`HIT`
 
-#### `DJ FILTER`
+#### `DJ RESO`
 
-When `FX` is set to `DJ FILTER`, `HP` or `LP`, the following controls the resonance of the filter:
-
-- `NEUTRAL` keeps the Performer filter resonance neutral
-- `RAVE` sets the Performer filter resonance to have a more pronounced "rave" effect
+When `FX` is set to `DJ FILTER`, `HP` or `LP`, `DJ RESO` controls the resonance of the filter, from `0%` (no resonance) to `100%` (full resonance, to have a more pronounced "rave" effect)
 
 #### `CHN`
 
