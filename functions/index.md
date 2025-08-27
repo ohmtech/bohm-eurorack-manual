@@ -106,6 +106,20 @@ as well as the {guilabel}`TAPS` CV produces a volume envelope that is applied
 to the sound generator. The sound generators {guilabel}`PITCH` can be also
 altered, but {guilabel}`LENGTH` has no effect.
 
+{guilabel}`LENGTH` (when applicable) and {guilabel}`PITCH` on Groove are
+relative to the {guilabel}`LENGTH` and {guilabel}`PITCH` on Bohm.
+When {guilabel}`LENGTH` or  {guilabel}`PITCH` on Groove is at the central
+position, then the actual length or pitch of Groove will be the same as Bohm.
+If the {guilabel}`LENGTH` or  {guilabel}`PITCH` on Groove is turned to the left,
+then the {guilabel}`LENGTH` or  {guilabel}`PITCH` will be lower than the one
+on Bohm, but never below the minimum value on Bohm.
+Conversely, If the {guilabel}`LENGTH` or  {guilabel}`PITCH` on Groove is turned to the right,
+then the {guilabel}`LENGTH` or  {guilabel}`PITCH` will be higher than the one
+on Bohm, but never above the maximum value on Bohm.
+For example, if Bohm {guilabel}`PITCH` is at the minimum (a low C key), then
+the Groove {guilabel}`PITCH` knob will have no effect from full counterclockwise
+to center position.
+
 The sound generators then enter the effect section for which {guilabel}`FX`
 controls the effect.
 
