@@ -124,6 +124,17 @@ For example, if Bohm {guilabel}`PITCH` is at the minimum (a low C key), then
 the Groove {guilabel}`PITCH` knob will have no effect from full counterclockwise
 to center position.
 
+In more details, the volume envelope works as follow:
+- When {guilabel}`HIT` is triggered, the envelope is retriggered
+- The subsequent {guilabel}`CLOCK` triggers define the speed to reach the following {guilabel}`2`, {guilabel}`3`, {guilabel}`4` taps
+- After that, and as long as the envelope is not retriggered, the value of the envelope depends on the `GRV ENV` system option:
+   - If set to `FALL`, the envelope will smoothly go back to 0
+   - If set to `SUSTAIN`, the envelope will stay at the level defined by tap {guilabel}`4`
+
+And typically:
+- When using triplets for the clock, the envelope will work as intended, with {guilabel}`2`, {guilabel}`3` being the only relevant taps
+- If there are more than 4 clocks between each {guilabel}`HIT` (for example for a very fast tempo where the kick won't be triggered every beat), one can use the {guilabel}`TAPS` CV input to further shape the volume envelope
+
 The sound generators then enter the effect section for which {guilabel}`FX`
 controls the effect.
 
