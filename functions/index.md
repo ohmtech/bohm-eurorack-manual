@@ -30,6 +30,12 @@ The optional **Groove** expander is a second kick voice triggered by the
 {guilabel}`CLOCK` input. The Groove {guilabel}`VOL` allows to balance the
 Groove secondary kick voice with the Bohm first kick voice.
 
+```{important}
+The optional **Groove** expander second kick voice needs to be triggered with the
+{guilabel}`CLOCK` input. This is typically done with, but not limited to,
+a traditional 16th note Eurorack clock.
+```
+
 Both signal enters the optional **Performer** expander. The Performer
 {guilabel}`VOL` allows to balance the Bohm and Groove kick voices with the
 Performer audio {guilabel}`IN`. Both signals enter the effect section, and
@@ -99,6 +105,35 @@ volume defines by the {guilabel}`2`, {guilabel}`3`, {guilabel}`4` knobs
 as well as the {guilabel}`TAPS` CV produces a volume envelope that is applied
 to the sound generator. The sound generators {guilabel}`PITCH` can be also
 altered, but {guilabel}`LENGTH` has no effect.
+
+```{important}
+{guilabel}`LENGTH` has only an effect for the repetition sound generator, so from around 3 o'clock to fully clockwise.
+```
+
+{guilabel}`LENGTH` (when applicable) and {guilabel}`PITCH` on Groove are
+relative to the {guilabel}`LENGTH` and {guilabel}`PITCH` on Bohm.
+When {guilabel}`LENGTH` or  {guilabel}`PITCH` on Groove is at the central
+position, then the actual length or pitch of Groove will be the same as Bohm.
+If the {guilabel}`LENGTH` or  {guilabel}`PITCH` on Groove is turned to the left,
+then the {guilabel}`LENGTH` or  {guilabel}`PITCH` will be lower than the one
+on Bohm, but never below the minimum value on Bohm.
+Conversely, If the {guilabel}`LENGTH` or  {guilabel}`PITCH` on Groove is turned to the right,
+then the {guilabel}`LENGTH` or  {guilabel}`PITCH` will be higher than the one
+on Bohm, but never above the maximum value on Bohm.
+For example, if Bohm {guilabel}`PITCH` is at the minimum (a low C key), then
+the Groove {guilabel}`PITCH` knob will have no effect from full counterclockwise
+to center position.
+
+In more details, the volume envelope works as follow:
+- When {guilabel}`HIT` is triggered, the envelope is retriggered
+- The subsequent {guilabel}`CLOCK` triggers define the speed to reach the following {guilabel}`2`, {guilabel}`3`, {guilabel}`4` taps
+- After that, and as long as the envelope is not retriggered, the value of the envelope depends on the `GRV ENV` system option:
+   - If set to `FALL`, the envelope will smoothly go back to 0
+   - If set to `SUSTAIN`, the envelope will stay at the level defined by tap {guilabel}`4`
+
+And typically:
+- When using triplets for the clock, the envelope will work as intended, with {guilabel}`2`, {guilabel}`3` being the only relevant taps
+- If there are more than 4 clocks between each {guilabel}`HIT` (for example for a very fast tempo where the kick won't be triggered every beat), one can use the {guilabel}`TAPS` CV input to further shape the volume envelope
 
 The sound generators then enter the effect section for which {guilabel}`FX`
 controls the effect.
@@ -214,6 +249,10 @@ Only the variations of the snapshot are reloaded (_ie._ not the knob positions).
 - `BITCRUSH` (on a few selected models) is a bit crusher distortion
 - `DECIM` (on a few selected models) is a sampling rate reduction distortion
 
+#### `STEREO`
+
+`STEREO` controls the stereo width of the Bohm signal, from `0%` (mono), to `100%` (full stereo)
+
 ### Groove Variations
 
 #### `FX`
@@ -222,6 +261,10 @@ Only the variations of the snapshot are reloaded (_ie._ not the knob positions).
 - `HP` sets the Groove effect to a high-pass filter. The {guilabel}`FX` parameter then controls the cut-off frequency of the filter
 - `BP` sets the Groove effect to a band-pass filter. The {guilabel}`FX` parameter then controls the center frequency of the filter
 - `DIST` sets the Groove effect to a distortion. The {guilabel}`FX` parameter then controls the gain of the distortion
+
+#### `STEREO`
+
+`STEREO` controls the stereo width of the Groove signal, from `0%` (mono), to `100%` (full stereo)
 
 ### Performer Variations
 
@@ -234,12 +277,9 @@ Only the variations of the snapshot are reloaded (_ie._ not the knob positions).
 - `BEAT ROLL` sets the Performer effect to a beat roll. The {guilabel}`FX` parameter controls the amount of beat roll, from beat-synchronized counterclockwise to stuterring effects as the knob is turned clockwise
 - `SLIP ROLL` sets the Performer effect to a slip roll. It is the same as the beat roll, except the input is resampled on every {guilabel}`HIT`
 
-#### `DJ FILTER`
+#### `DJ RESO`
 
-When `FX` is set to `DJ FILTER`, `HP` or `LP`, the following controls the resonance of the filter:
-
-- `NEUTRAL` keeps the Performer filter resonance neutral
-- `RAVE` sets the Performer filter resonance to have a more pronounced "rave" effect
+When `FX` is set to `DJ FILTER`, `HP` or `LP`, `DJ RESO` controls the resonance of the filter, from `0%` (no resonance) to `100%` (full resonance, to have a more pronounced "rave" effect)
 
 #### `CHN`
 
