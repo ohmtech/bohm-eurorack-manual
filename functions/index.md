@@ -106,6 +106,10 @@ as well as the {guilabel}`TAPS` CV produces a volume envelope that is applied
 to the sound generator. The sound generators {guilabel}`PITCH` can be also
 altered, but {guilabel}`LENGTH` has no effect.
 
+```{important}
+{guilabel}`LENGTH` has only an effect for the repetition sound generator, so from around 3 o'clock to fully clockwise.
+```
+
 {guilabel}`LENGTH` (when applicable) and {guilabel}`PITCH` on Groove are
 relative to the {guilabel}`LENGTH` and {guilabel}`PITCH` on Bohm.
 When {guilabel}`LENGTH` or  {guilabel}`PITCH` on Groove is at the central
