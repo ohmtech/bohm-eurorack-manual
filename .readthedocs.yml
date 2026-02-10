@@ -12,7 +12,6 @@ python:
 
 formats:
   - htmlzip
-  - pdf
 
 build:
   os: ubuntu-20.04
