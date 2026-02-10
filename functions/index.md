@@ -268,6 +268,31 @@ Only the variations of the snapshot are reloaded (_ie._ not the knob positions).
 
 ### Performer Variations
 
+#### `DUCK TIME`
+
+`DUCK TIME` controls the release time of the ducking curve.
+
+#### `DUCK SMTH`
+
+`DUCK SMTH` controls the smoothing of the ducking curve, which is more pronounced
+during the attack section, when the volume is abruptly cut off.
+
+This variation allows to slightly let the transients of the external audio input
+pass through, while still keeping a pumping effect when the Duck band split
+is not used.
+
+### `DUCK BS`
+
+`DUCK BS` controls the frequency of the band split. All frequencies below
+the band split frequency are ducked while the frequencies above are preserved.
+
+The band split is smooth enough (-12dB/oct) for its effect to not be too
+noticeable while still preserving frequencies correctly.
+
+This variation is typically used when ducking should feel more transparent,
+when pumping is not the main artistic intent.
+
+
 #### `FX`
 
 - `DJ FILTER` sets the Performer effect to a DJ filter. The {guilabel}`FX` parameter is a low-pass filter counterclockwise, and high-pass filter clockwise, with the center
