@@ -8,7 +8,7 @@ Upgrading the firmware and models bring new features and bug corrections.
 To check your firmware version, press the {guilabel}`FUNCTION` encoder for 2 seconds, turn the encoder fully to the right to navigate to the `ABOUT` menu, click the {guilabel}`FUNCTION` button, and look at the version displayed on the screen.
 
 The latest SD card content, with firmware and latest models, is available
-[here](https://s3.amazonaws.com/static.ohmforce.com/firmwares/bohm-eurorack-ddff89064ed2d016f1cfab8df40b8d073ff25244.zip).
+[here](https://s3.amazonaws.com/static.ohmforce.com/firmwares/bohm-eurorack-97d7cd7d55a448cceaf9d955ba916d406b63b09a.zip).
 
 To update the firmware and models, please follow the instructions below:
 
