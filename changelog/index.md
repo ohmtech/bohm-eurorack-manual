@@ -1,11 +1,11 @@
 # Changelog
 
-## Version 2026.0205.1320
+## Version 2026.0225.2345
 
 - Performer FX LED shows now an intermediate state (blinking) while transitioning and waiting for {guilabel}`HIT` in synced mode
 - New `PERF ON/OFF` system setting allows to either toggle FX (`TRIG`, old behavior, default) or set FX as a gate (`GATE`)
 - New `LOCK MODEL` system setting to prevent accidental model changes in a live set when using `STUDIO` mode. It is automatically turned off when powering up Bohm
-- New `TAPS OUT` system setting to select which envelope to output from Groove (`GROOVE`, old behavior, default), Inverted Bohm (`I BOHM`) or Performer ducking envelope (`PERF`)
+- New `TAPS OUT` system setting to select which envelope to output from Groove (`GROOVE`, old behavior, default), Inverted Bohm (`I BOHM`), Performer ducking (`PERF`) or (non-inverted) Bohm envelope (`BOHM`)
 - New `IN VOL` system setting to lower the volume of the external audio input
 - New `PERF VOL` system setting to select which signals are affected by the Performer volume slider/CV, either Bohm and Groove (`B+G`, old behavior, default) or only Bohm (`BOHM`)
 - New `PERF MAX` system setting to restrict the maximum volume when slider or CV is full on
@@ -14,6 +14,9 @@
 - New `DUCK BS` model setting to set the maximum frequency below which the ducking is operating
 - New `LAYER VOL` setting in the XT-88 model, to set the volume of the layering sample
 - New `POST EQ` system settings as a sub-menu, with 1 low shelf, 1 peak filter (boost/cut) and 1 high shelf
+- OLP4 model now supports Groove
+- When using HIT in sustain mode (using a long gate), Bohm can now reach C1 and C2 for every position of `CURVE`
+- It is now possible to load a snapshop with pots positions, which allows to copy a snapshot or make tweaks when preparing a live performance
 
 
 ## Version 2025.0827.1600

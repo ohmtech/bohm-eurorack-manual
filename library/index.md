@@ -110,8 +110,6 @@ The operators can be arranged in different configurations called "algorithms":
 {guilabel}`TRS TONE` controls the amount of FM feedback from operator 3 to
 operator 1, which makes it more noisy. {guilabel}`COLOR` is inactive.
 
-The Groove expander is not supported with this model.
-
 
 ```{image} pm-k1.png
 :width: 20%

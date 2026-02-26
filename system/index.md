@@ -106,6 +106,7 @@ By default, the groove envelope will fall after the 4th tap. It is also possible
 - `FALL`: Fall the envelope after the 4th tap
 - `SUSTAIN`: Sustain the envelope at 4th tap level after the 4th tap
 
+
 ## Taps Out option
 
 By default, the {guilabel}`TAPS` output CV emits the envelope of the Groove.
@@ -114,6 +115,10 @@ It is also possible to emit the Bohm or Performer envelopes:
 - `GROOVE`: Groove envelope
 - `I BOHM`: Inverted Bohm envelope
 - `PERF`: Performer envelope
+- `BOHM`: Bohm (non-inverted) envelope
+
+Typically, the `GROOVE`, `I BOHM` and `PERF` envelopes would be used with a VCA,
+while the `BOHM` envelope would be used for a compressor.
 
 
 ## Panning option

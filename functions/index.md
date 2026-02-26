@@ -231,11 +231,23 @@ kick can be optionally renamed.
 
 Conversely, snapshots can be recalled by navigating to the `SNAPSHOT` sub menu,
 and then choose `LOAD`. The user will then select the slot they want to
-recall.
+recall. Only the variations of the snapshot are reloaded (_ie._ not the pots positions).
 
-```{note}
-Only the variations of the snapshot are reloaded (_ie._ not the knob positions).
-```
+One can also choose instead `LOAD W/ POTS`, which will recall all the variations
+as well as pots positions of the snapshot.
+This allows to copy or make tweaks of a snapshot when preparing a live performance.
+When a snapshot is recalled with pots positions, all the pots are behaving like
+`LATCH` mode, that is a pot needs to be a bit turned for the change to be
+registered and for the value to "jump" to the new position.
+
+Example, copying a snapshot:
+- `LOAD W/ POTS` and select slot to copy
+- `SAVE` and select new slot
+
+Example, modifying a snapshot:
+- `LOAD W/ POTS` and select slot to modify
+- Move one or more pots
+- `SAVE` and select the same slot
 
 ### Bohm Common Variations
 
