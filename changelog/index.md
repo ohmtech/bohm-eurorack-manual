@@ -1,6 +1,6 @@
 # Changelog
 
-## Version 2026.0225.2345
+## Version 2026.0302.1730
 
 - Performer FX LED shows now an intermediate state (blinking) while transitioning and waiting for {guilabel}`HIT` in synced mode
 - New `PERF ON/OFF` system setting allows to either toggle FX (`TRIG`, old behavior, default) or set FX as a gate (`GATE`)
