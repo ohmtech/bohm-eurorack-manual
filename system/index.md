@@ -60,8 +60,13 @@ without having to aim for a precise slider position.
 By default, the {guilabel}`PITCH` CV is not tracking musical pitch and the entire kick octave
 can be CV controlled using for example a LFO with a ±5V output range.
 
-Bohm can pitch track the kick octave using Volt/Octave. This options then allows
+Bohm can pitch track the kick octave using 1 Volt/Octave. This options then allows
 to select the 1V voltage range to map to the octave, either 0..1V, 1..2V or 2..3V.
+
+```{important}
+If your sequencer supports multiple pitch control standards, make sure to
+select 1 Volt per octave.
+```
 
 
 ## ATTVERT 2 option

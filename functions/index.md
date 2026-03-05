@@ -61,6 +61,18 @@ in the clockwise position, so that if {guilabel}`LENGTH` is short enough, the
 oscillator will not reach the fundamental frequency.
 ```
 
+Pitch tracking can be used to play bass lines, provided {guilabel}`LENGTH` is
+long enough or a gate is used for {guilabel}`HIT` (see below). For pitch tracking
+to work properly, put the {guilabel}`PITCH` knob completely counterclockwise,
+{guilabel}`PITCH` attenuverter completely clockwise, and select an appropriate
+voltage range from 0V to 1V, 1V to 2V or 2V to 3V in the Bohm system settings
+depending on the output voltage range of your sequencer.
+
+```{important}
+If your sequencer supports multiple pitch control standards, make sure to
+select 1 Volt per octave.
+```
+
 The oscillator is often a wavetable synthesizer, and {guilabel}`COLOR` controls
 the position curve over time.
 
