@@ -3,13 +3,70 @@
 The system settings are accessed by pressing the {guilabel}`FUNCTION` button
 for at least 2 seconds.
 
+## Post EQ option
+
+This option allows to set an EQ on the signal output. The signal output EQ only affects Bohm and Groove, but not the Performer audio input.
+
+The Post EQ has:
+- 1 low shelf, with configurable frequency and level
+- 1 peak filter, with configurable frequency, gain and Q factor
+- 1 high shelf, with configurable frequency and level
+
+By default, all levels and gains are set to 0dB, so the post EQ has no effect.
+
+Note that the Post EQ is a system setting and not a per-model setting.
+Its intent is to be able to make quick EQ changes before a live set in a club,
+for example if the PA over-emphasizes bass frequencies.
+
+
+## In Vol option
+
+By default, the audio input volume on Performer is 0dB.
+This option allows to lower the volume of the external audio input
+from -60dB to 0dB, in 1dB steps.
+
+It is a convenience feature to lower the volume of a module without output level
+control directly connected to Bohm,
+allowing to save one VCA in limited rack space configuration (live sets).
+
+
+## Perf Vol option
+
+By default, the {guilabel}`VOL` slider and CV on Performer controls the volume
+of the combined Bohm and Groove, to balance it against the Performer external
+audio input.
+It is possible to select which signal is controlled by {guilabel}`VOL`:
+
+- `B+G`: Bohm and Groove
+- `BOHM`: Bohm only
+
+This feature also allows to make the Groove drone without hearing the Bohm kick.
+
+
+## Perf Max option
+
+By default, when {guilabel}`VOL` slider or CV are to the max, the output of
+the Bohm and/or Groove are at their maximum, 0dB.
+
+It is possible to set the maximum level when the {guilabel}`VOL` slider or CV
+are to the max, from -18dB to 0dB, in 1dB steps.
+
+This allows to put back the Bohm volume to a desired level in live with a swift gesture,
+without having to aim for a precise slider position.
+
+
 ## Pitch CV option
 
 By default, the {guilabel}`PITCH` CV is not tracking musical pitch and the entire kick octave
 can be CV controlled using for example a LFO with a ±5V output range.
 
-Bohm can pitch track the kick octave using Volt/Octave. This options then allows
+Bohm can pitch track the kick octave using 1 Volt/Octave. This options then allows
 to select the 1V voltage range to map to the octave, either 0..1V, 1..2V or 2..3V.
+
+```{important}
+If your sequencer supports multiple pitch control standards, make sure to
+select 1 Volt per octave.
+```
 
 
 ## ATTVERT 2 option
@@ -37,12 +94,36 @@ By default, activating or deactivating the Performer FX section is synced to
 - `SYNCED`: Sync FX to next {guilabel}`HIT`
 
 
+## Perf ON/OFF option
+
+By default, pressing the {guilabel}`ON/OFF` button or sending a trigger to
+the {guilabel}`ON/OFF` CV will toggle the FX activation.
+It is also possible to have a gate behavior:
+
+- `TRIG`: Toggle FX on trigger or button click
+- `GATE`: Activate FX while CV is on or button is hold
+
+
 ## Grv Env option
 
 By default, the groove envelope will fall after the 4th tap. It is also possible to sustain it, to use Groove as a drone, or when there is more than 4 taps between two {guilabel}`HIT` (typically at higher tempos):
 
 - `FALL`: Fall the envelope after the 4th tap
 - `SUSTAIN`: Sustain the envelope at 4th tap level after the 4th tap
+
+
+## Taps Out option
+
+By default, the {guilabel}`TAPS` output CV emits the envelope of the Groove.
+It is also possible to emit the Bohm or Performer envelopes:
+
+- `GROOVE`: Groove envelope
+- `I BOHM`: Inverted Bohm envelope
+- `PERF`: Performer envelope
+- `BOHM`: Bohm (non-inverted) envelope
+
+Typically, the `GROOVE`, `I BOHM` and `PERF` envelopes would be used with a VCA,
+while the `BOHM` envelope would be used for a compressor.
 
 
 ## Panning option
@@ -66,6 +147,17 @@ lifetime of your Bohm OLED screen. However in some situations it might
 undesirable, for example when shooting a video or during a live
 performance.
 The screen saver can therefore be turned `OFF` to accomodate those cases.
+
+
+## Lock Model option
+
+When using the Bohm in live but using `STUDIO` mode instead of one of the live
+modes, an accidental rotation of the {guilabel}`FUNCTION` encoder will change the model.
+
+This option allows to lock the current selected model in `STUDIO` mode.
+
+This setting is not persistent: when the Bohm is powered up
+the {guilabel}`FUNCTION` encoder rotation is always unlocked.
 
 
 ## Shop Mode option
@@ -97,7 +189,7 @@ Restoring takes a few seconds, and the module will automatically restart after i
 One can reset the module back to the same state as when it left our factory. Resetting to factory settings will reset all the system settings listed above, as well as all the programs and snapshots. However it will keep the factory calibration data.
 
 ```{warning}
-Factory reset will remove everything in the Bohm internaly memory, including programs and snapshots. It is advised to backup the module before doing so.
+Factory reset will remove everything in the Bohm internal memory, including programs and snapshots. It is advised to backup the module before doing so.
 ```
 
 Factory reset takes a few seconds, and the module will automatically restart after it is completed.

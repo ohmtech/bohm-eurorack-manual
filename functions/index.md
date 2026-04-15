@@ -61,6 +61,18 @@ in the clockwise position, so that if {guilabel}`LENGTH` is short enough, the
 oscillator will not reach the fundamental frequency.
 ```
 
+Pitch tracking can be used to play bass lines, provided {guilabel}`LENGTH` is
+long enough or a gate is used for {guilabel}`HIT` (see below). For pitch tracking
+to work properly, put the {guilabel}`PITCH` knob completely counterclockwise,
+{guilabel}`PITCH` attenuverter completely clockwise, and select an appropriate
+voltage range from 0V to 1V, 1V to 2V or 2V to 3V in the Bohm system settings
+depending on the output voltage range of your sequencer.
+
+```{important}
+If your sequencer supports multiple pitch control standards, make sure to
+select 1 Volt per octave.
+```
+
 The oscillator is often a wavetable synthesizer, and {guilabel}`COLOR` controls
 the position curve over time.
 
@@ -231,11 +243,23 @@ kick can be optionally renamed.
 
 Conversely, snapshots can be recalled by navigating to the `SNAPSHOT` sub menu,
 and then choose `LOAD`. The user will then select the slot they want to
-recall.
+recall. Only the variations of the snapshot are reloaded (_ie._ not the pots positions).
 
-```{note}
-Only the variations of the snapshot are reloaded (_ie._ not the knob positions).
-```
+One can also choose instead `LOAD W/ POTS`, which will recall all the variations
+as well as pots positions of the snapshot.
+This allows to copy or make tweaks of a snapshot when preparing a live performance.
+When a snapshot is recalled with pots positions, all the pots are behaving like
+`LATCH` mode, that is a pot needs to be a bit turned for the change to be
+registered and for the value to "jump" to the new position.
+
+Example, copying a snapshot:
+- `LOAD W/ POTS` and select slot to copy
+- `SAVE` and select new slot
+
+Example, modifying a snapshot:
+- `LOAD W/ POTS` and select slot to modify
+- Move one or more pots
+- `SAVE` and select the same slot
 
 ### Bohm Common Variations
 
@@ -267,6 +291,31 @@ Only the variations of the snapshot are reloaded (_ie._ not the knob positions).
 `STEREO` controls the stereo width of the Groove signal, from `0%` (mono), to `100%` (full stereo)
 
 ### Performer Variations
+
+#### `DUCK TIME`
+
+`DUCK TIME` controls the release time of the ducking curve.
+
+#### `DUCK SMTH`
+
+`DUCK SMTH` controls the smoothing of the ducking curve, which is more pronounced
+during the attack section, when the volume is abruptly cut off.
+
+This variation allows to slightly let the transients of the external audio input
+pass through, while still keeping a pumping effect when the Duck band split
+is not used.
+
+### `DUCK BS`
+
+`DUCK BS` controls the frequency of the band split. All frequencies below
+the band split frequency are ducked while the frequencies above are preserved.
+
+The band split is smooth enough (-12dB/oct) for its effect to not be too
+noticeable while still preserving frequencies correctly.
+
+This variation is typically used when ducking should feel more transparent,
+when pumping is not the main artistic intent.
+
 
 #### `FX`
 
