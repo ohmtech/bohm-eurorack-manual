@@ -110,8 +110,6 @@ The operators can be arranged in different configurations called "algorithms":
 {guilabel}`TRS TONE` controls the amount of FM feedback from operator 3 to
 operator 1, which makes it more noisy. {guilabel}`COLOR` is inactive.
 
-The Groove expander is not supported with this model.
-
 
 ```{image} pm-k1.png
 :width: 20%
@@ -294,6 +292,8 @@ which brightness can be tuned using the `BRIGHT` model variation menu.
 
 Drum layering samples can be changed using the `LAYER` model variation menu,
 and will display the loaded samples of the user.
+
+The `LAYER VOL` variation menu allows to change the layering sample volume.
 
 Another instance of the wavetable oscillator is used for the Repetition sound
 source, but without the drum layering sampler.
