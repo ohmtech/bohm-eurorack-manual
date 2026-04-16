@@ -49,6 +49,55 @@ Another instance of those two operators is used for the Repetition sound source
 of the Groove expander.
 
 
+```{image} hpn.png
+:width: 20%
+:align: right
+```
+## HPN (Available Soon)
+
+```{note}
+[Register now](https://docs.google.com/forms/d/e/1FAIpQLSejDS4-5lSJu10RVo3Le0XZwoGzKYfNF74uzbf128DU1iingQ/viewform) to get early access to HPN.
+```
+
+The HPN model is a wavetable oscillator kick combined with drum layering samples made from synthesized transients (FM hihats and FM snares), which sound "softer" than models like SP-6 or WT-4.
+
+This model also completely redefines the Groove circuit compared to other models: instead of repetitions of the Bohm kick, Groove plays a random sequence of notes generated with the same wavetable oscillator as the kick, routed through a delay and an effects chain.
+
+The wavetable oscillator is frequency-controlled by {guilabel}`PITCH` and its {guilabel}`CURVE`, and amplitude-controlled by {guilabel}`ATTACK`, {guilabel}`SUSTAIN`, {guilabel}`LENGTH` and {guilabel}`VELOCITY` as described in the {doc}`/functions/index` chapter.
+
+The {guilabel}`COLOR` parameter controls the amount and duration of high frequency transients produced, by varying the wavetable position:
+- Fully counterclockwise, the wavetable oscillator is just a sinus
+- As the knob is turned clockwise, the oscillator sounds more distorted in the transient phase of the kick, but the tail remains a sinus
+- Fully clockwise, the wavetable oscillator only reaches the sinus position if the {guilabel}`LENGTH` is long enough
+
+The wavetable waveform itself can be changed using the `WT` model variation menu. Drum layering samples can be changed using the `LAYER` model variation menu.
+
+The Bohm FX menu also includes a new `LPF` option, in addition to the existing `TUBE`, `BASS`, `SOFT`, etc. When `LPF` is selected, {guilabel}`FX` controls the cut-off frequency.
+
+The Groove circuit uses another instance of the same wavetable oscillator,
+sharing the Bohm {guilabel}`COLOR` setting, to play a random sequence of notes.
+Each {guilabel}`CLOCK` trigger advances the sequence by one step
+and produces the next note:
+
+- `SEQ LEN` sets the length of the sequence, from 3 to 16 steps
+- `SEQ SEED` selects the random seed used to generate the sequence
+- `SCALE` selects the musical scale the notes are drawn from (major, minor, chromatic, etc.)
+- Groove {guilabel}`LENGTH` controls the length of each individual note
+- Groove {guilabel}`PITCH` transposes the entire sequence
+- Groove {guilabel}`COLOR` controls the range of sequence pitches and the cutoff of a low-pass filter, whose slope can be set to -24dB/oct or -12dB/oct using the `LP` menu
+- `SOFTEN` limits the clickiness of each note
+
+```{important}
+Groove requires {guilabel}`CLOCK` to be triggered in order to produce sound.
+```
+
+The FX section is a delay followed by a selectable effect, which can be a `COMB` filter, a `FILTER`, or one of several Ohmicide-based distortions.
+
+When an Ohmicide-based distortion is selected, two additional parameters become adjustable:
+- `SHAPE` selects the dynamics shape, from `SHARP` (expander) through `NEUTRAL` (no effect) to `PHAT` (compression)
+- `BODY` sets the amount of compression or expansion
+
+
 ```{image} hz-1.png
 :width: 20%
 :align: right
