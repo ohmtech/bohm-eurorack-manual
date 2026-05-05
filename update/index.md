@@ -5,6 +5,10 @@ SD card.
 
 Upgrading the firmware and models bring new features and bug corrections.
 
+```{note}
+[Register now](https://docs.google.com/forms/d/e/1FAIpQLSejDS4-5lSJu10RVo3Le0XZwoGzKYfNF74uzbf128DU1iingQ/viewform) to get early access to firmware updates and new models.
+```
+
 To check your firmware version, press the {guilabel}`FUNCTION` encoder for 2 seconds, turn the encoder fully to the right to navigate to the `ABOUT` menu, click the {guilabel}`FUNCTION` button, and look at the version displayed on the screen.
 
 The latest SD card content, with firmware and latest models, is available
