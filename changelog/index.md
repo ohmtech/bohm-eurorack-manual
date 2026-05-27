@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 2026.0526.2230
+
+- New HPN model
+- New randomize options `ONLY BOHM` and `ONLY GROOVE`
+- Fix audio click on model change when {guilabel}`ATTACK` is low and {guilabel}`LENGTH` is high
+- Soften crossfade when toggling Performer FX
+
+
 ## Version 2026.0311.1445
 
 - Performer FX LED shows now an intermediate state (blinking) while transitioning and waiting for {guilabel}`HIT` in synced mode
