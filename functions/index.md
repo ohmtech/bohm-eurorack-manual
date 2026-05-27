@@ -222,6 +222,8 @@ variations list to the `RANDOMIZE` sub menu, and then choose between
 the two randomization options:
 
 - `BOHM + GROOVE` will randomize only Bohm and Groove
+- `ONLY BOHM` will randomize only Bohm
+- `ONLY GROOVE` will randomize only Groove
 - `ALL` will randomize Bohm, Groove and Performer
 
 In Studio mode, the {guilabel}`FUNCTION` CV input will randomize the current

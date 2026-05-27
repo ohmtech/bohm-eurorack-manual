@@ -53,11 +53,7 @@ of the Groove expander.
 :width: 20%
 :align: right
 ```
-## HPN (Available Soon)
-
-```{note}
-[Register now](https://docs.google.com/forms/d/e/1FAIpQLSejDS4-5lSJu10RVo3Le0XZwoGzKYfNF74uzbf128DU1iingQ/viewform) to get early access to HPN.
-```
+## HPN
 
 The HPN model is a wavetable oscillator kick combined with drum layering samples made from synthesized transients (FM hihats and FM snares), which sound "softer" than models like SP-6 or WT-4.
 
@@ -88,10 +84,11 @@ and produces the next note:
 - `SOFTEN` limits the clickiness of each note
 
 ```{important}
-Groove requires {guilabel}`CLOCK` to be triggered in order to produce sound.
+Groove requires a **steady** {guilabel}`CLOCK` to produce sound.
+
 ```
 
-The FX section is a delay followed by a selectable effect, which can be a `COMB` filter, a `FILTER`, or one of several Ohmicide-based distortions.
+The FX section is a delay followed by a selectable effect, which can be a `COMB` filter, a `FILTER`, or one of several Ohmicide-based distortions.  The {guilabel}`CLOCK` interval is used to estimate tempo and set the delay time, so irregular triggers will cause audible artifacts in the delay.
 
 When an Ohmicide-based distortion is selected, two additional parameters become adjustable:
 - `SHAPE` selects the dynamics shape, from `SHARP` (expander) through `NEUTRAL` (no effect) to `PHAT` (compression)
