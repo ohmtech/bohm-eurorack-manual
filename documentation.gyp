@@ -33,6 +33,9 @@
             'functions/bohm.svg',
             'functions/groove.svg',
             'functions/performer.svg',
+            'functions/ducking_amount.svg',
+            'functions/ducking_freq.svg',
+            'functions/ducking_release.svg',
 
             'library/index.md',
 
