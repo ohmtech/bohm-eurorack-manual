@@ -68,7 +68,7 @@ The {guilabel}`COLOR` parameter controls the amount and duration of high frequen
 
 The wavetable waveform itself can be changed using the `WT` model variation menu. Drum layering samples can be changed using the `LAYER` model variation menu.
 
-The Bohm FX menu also includes a new `LPF` option, in addition to the existing `TUBE`, `BASS`, `SOFT`, etc. When `LPF` is selected, {guilabel}`FX` controls the cut-off frequency.
+The Bohm FX menu also includes a new `LPF` option, next to `TUBE`, `BASS`, `SOFT` and `WAVEFOLD`. When `LPF` is selected, {guilabel}`FX` controls the cut-off frequency.
 
 The Groove circuit uses another instance of the same wavetable oscillator,
 sharing the Bohm {guilabel}`COLOR` setting, to play a random sequence of notes.
@@ -138,7 +138,7 @@ waveforms as described upper in the FM-2X model.
 This time however, those waveforms are not interpolated and can be selected
 using the `WF1` and `WF2` model varations menus:
 - `WF1` selects the waveform for operator 1 and 3,
-- `WF1` selects the waveform for operator 2 and 4.
+- `WF2` selects the waveform for operator 2 and 4.
 
 The operators can be arranged in different configurations called "algorithms":
 - `12`: operator 1 into operator 2, then to out,
