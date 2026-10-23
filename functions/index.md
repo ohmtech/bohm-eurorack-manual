@@ -108,6 +108,11 @@ using the {guilabel}`COLOR` control.
 
 The repetitions are not delayed version of the kick: they are triggered every
 time {guilabel}`CLOCK` is triggered. Each repetition is called a "tap".
+
+```{note}
+If Groove is not producing any sound, the first thing to check is if you are triggering the {guilabel}`CLOCK`.
+```
+
 The volume of each tap, except the one on the down-beat, can be controlled using
 the {guilabel}`2`, {guilabel}`3`, {guilabel}`4` knobs as well as the {guilabel}`TAPS`
 CV. The repetition {guilabel}`LENGTH` and {guilabel}`PITCH` can be also altered.
