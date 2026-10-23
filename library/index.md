@@ -77,6 +77,8 @@ and produces the next note:
 
 - `SEQ LEN` sets the length of the sequence, from 3 to 16 steps
 - `SEQ SEED` selects the random seed used to generate the sequence
+- `SEQ RESET` restarts the sequence from its first step when clicked
+- `AUTO RESET` restarts the sequence from its first step when no {guilabel}`CLOCK` trigger is received (for `0.5S`, `1S` or `2S`), or never (when `OFF`)
 - `SCALE` selects the musical scale the notes are drawn from (major, minor, chromatic, etc.)
 - Groove {guilabel}`LENGTH` controls the length of each individual note
 - Groove {guilabel}`PITCH` transposes the entire sequence
