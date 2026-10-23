@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 2026.1023.0830
+
+- New Groove `SEQ RESET` and `AUTO RESET` in HPN to restart the sequencer manually or automatically when the {guilabel}`CLOCK` stops
+
+
 ## Version 2026.1021.1200
 
 - New HPN model
