@@ -1,5 +1,20 @@
 # Changelog
 
+## Version 2026.1023.0830
+
+- New Groove `SEQ RESET` and `AUTO RESET` in HPN to restart the sequencer manually or automatically when the {guilabel}`CLOCK` stops
+
+
+## Version 2026.1021.1200
+
+- New HPN model
+- New randomize options `ONLY BOHM` and `ONLY GROOVE`
+- Fix audio click on model change when {guilabel}`ATTACK` is low and {guilabel}`LENGTH` is high
+- Soften crossfade when toggling Performer FX
+- When using HIT in sustain mode (using a long gate), Bohm can now reach C2 more precisely
+- Fix a bug where Groove tap 4 was not controlling volume when in `SUSTAIN` mode
+
+
 ## Version 2026.0311.1445
 
 - Performer FX LED shows now an intermediate state (blinking) while transitioning and waiting for {guilabel}`HIT` in synced mode
