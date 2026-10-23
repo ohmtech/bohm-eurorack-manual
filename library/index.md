@@ -141,7 +141,7 @@ waveforms as described upper in the FM-2X model.
 This time however, those waveforms are not interpolated and can be selected
 using the `WF1` and `WF2` model varations menus:
 - `WF1` selects the waveform for operator 1 and 3,
-- `WF1` selects the waveform for operator 2 and 4.
+- `WF2` selects the waveform for operator 2 and 4.
 
 The operators can be arranged in different configurations called "algorithms":
 - `12`: operator 1 into operator 2, then to out,

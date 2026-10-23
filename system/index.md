@@ -22,8 +22,8 @@ for example if the PA over-emphasizes bass frequencies.
 ## In Vol option
 
 By default, the audio input volume on Performer is 0dB.
-This option allows to lower the volume of the external audio input
-from -60dB to 0dB, in 1dB steps.
+This option allows to adjust the volume of the external audio input
+from -60dB to +6dB, in 1dB steps.
 
 It is a convenience feature to lower the volume of a module without output level
 control directly connected to Bohm,
