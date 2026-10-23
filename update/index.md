@@ -4,15 +4,16 @@ The firmware and models of your module can be conveniently updated using the pro
 SD card.
 
 Upgrading the firmware and models bring new features and bug corrections.
+Current version is `2026.1021.1200`.
 
 ```{note}
 [Register now](https://docs.google.com/forms/d/e/1FAIpQLSejDS4-5lSJu10RVo3Le0XZwoGzKYfNF74uzbf128DU1iingQ/viewform) to get early access to firmware updates and new models.
 ```
 
-To check your firmware version, press the {guilabel}`FUNCTION` encoder for 2 seconds, turn the encoder fully to the right to navigate to the `ABOUT` menu, click the {guilabel}`FUNCTION` button, and look at the version displayed on the screen.
+To check your firmware version, press the {guilabel}`FUNCTION` encoder for 2 seconds, turn the encoder to the right to navigate to the `ABOUT` menu, click the {guilabel}`FUNCTION` button, and look at the version displayed on the screen.
 
 The latest SD card content, with firmware and latest models, is available
-[here](https://s3.amazonaws.com/static.ohmforce.com/firmwares/bohm-eurorack-60cca68645b71ceba7e69426c3f8b06e400d0657.zip).
+[here](https://s3.amazonaws.com/static.ohmforce.com/firmwares/bohm-eurorack-05be2456eb8ef22636f9adf93e4f8860a3bae7c3.zip).
 
 To update the firmware and models, please follow the instructions below:
 
