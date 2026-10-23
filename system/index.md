@@ -83,6 +83,8 @@ everything using this option:
 
 - `ALL`: Randomize Bohm, Groove and Performer
 - `B+G`: Randomize only Bohm and Groove
+- `BOHM`: Randomize only Bohm
+- `GRV`: Randomize only Groove
 
 
 ## Perf FX option
