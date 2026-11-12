@@ -64,7 +64,7 @@ Bohm has 32 programs, and each program is defined by:
 - Its **number of steps**, from 1 to 16
 - The **actual steps**, which contain an entire snapshot of a kick (model variations and knob positions)
 - The **knob options** (Latch, Relative or Override)
-- The **follow action** (None, Loop or next program number, only relevant in Song mode)
+- The **follow action** (End, Loop or a program number, only relevant in Song mode)
 - The **performer mode** (Include or exclude)
 
 Regarding the per sequence knob options:

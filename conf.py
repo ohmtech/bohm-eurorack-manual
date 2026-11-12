@@ -42,6 +42,7 @@ templates_path = ['_templates']
 exclude_patterns = [
    '_build',
    'submodules',
+   'README.md',
    'Thumbs.db',
    '.DS_Store'
 ]
@@ -56,7 +57,6 @@ html_theme = 'sphinx_rtd_theme'
 html_logo = 'img/logo.svg'
 html_theme_options = {
    'logo_only': True,
-   'display_version': False,
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
