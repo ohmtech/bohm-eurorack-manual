@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Bohm'
-copyright = '2025, Ohm Force'
-author = 'Ohm Force'
+copyright = '2026, ohmforce'
+author = 'ohmforce'
 
 
 # -- General configuration ---------------------------------------------------
