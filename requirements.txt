@@ -1,26 +1,9 @@
 # Packages required to build docs, independent of application dependencies
 
-Sphinx==4.3.2
+Sphinx==9.2.0
+sphinx_rtd_theme==3.1.0
 
-sphinx_rtd_theme==1.0.0
-sphinx-tabs==3.2.0
-sphinx-intl==2.0.1
-
-readthedocs-sphinx-search==0.1.1
-
-# Docs
-sphinxemoji==0.2.0
-sphinxcontrib-httpdomain==1.8.0
-sphinxcontrib-youtube==1.0.1
-sphinx-prompt==1.4.0
-sphinx-notfound-page==0.8
-sphinx-autobuild==2021.3.14
+# Extensions (conf.py)
+myst_parser==5.1.0
+sphinxcontrib-youtube==1.5.0
 sphinx-copybutton==0.5.2
-sphinxcontrib-applehelp==1.0.2
-sphinxcontrib-devhelp==1.0.2
-sphinxcontrib-htmlhelp==2.0.0
-sphinxcontrib-qthelp==1.0.3
-sphinxcontrib-serializinghtml==1.1.5
-
-# Markdown
-myst_parser==0.17.2

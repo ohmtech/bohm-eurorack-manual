@@ -108,6 +108,11 @@ using the {guilabel}`COLOR` control.
 
 The repetitions are not delayed version of the kick: they are triggered every
 time {guilabel}`CLOCK` is triggered. Each repetition is called a "tap".
+
+```{note}
+If Groove is not producing any sound, the first thing to check is if you are triggering the {guilabel}`CLOCK`.
+```
+
 The volume of each tap, except the one on the down-beat, can be controlled using
 the {guilabel}`2`, {guilabel}`3`, {guilabel}`4` knobs as well as the {guilabel}`TAPS`
 CV. The repetition {guilabel}`LENGTH` and {guilabel}`PITCH` can be also altered.
@@ -167,6 +172,16 @@ combined with the {guilabel}`TAPS` CV input is available on the {guilabel}`TAPS`
 The external stereo audio {guilabel}`IN` is ducked on every {guilabel}`HIT` trigger,
 and {guilabel}`DUCK` controls the amount of ducking.
 
+The diagram below shows the effect of {guilabel}`DUCK` on the ducking gain curve.
+The solid line represents {guilabel}`DUCK` turned fully clockwise,
+and the faded lines show intermediate positions
+as {guilabel}`DUCK` is turned counterclockwise.
+
+```{image} ducking_amount.svg
+:width: 75%
+:align: center
+```
+
 {guilabel}`VOL` controls the volume of the Bohm and Groove output before the
 ducked audio input and kick goes into the effect section.
 
@@ -219,9 +234,11 @@ find the sound you want or get some new inspiration.
 
 To randomize the current model variations, navigate to the end of the model
 variations list to the `RANDOMIZE` sub menu, and then choose between
-the two randomization options:
+the randomization options:
 
 - `BOHM + GROOVE` will randomize only Bohm and Groove
+- `ONLY BOHM` will randomize only Bohm
+- `ONLY GROOVE` will randomize only Groove
 - `ALL` will randomize Bohm, Groove and Performer
 
 In Studio mode, the {guilabel}`FUNCTION` CV input will randomize the current
@@ -296,6 +313,15 @@ Example, modifying a snapshot:
 
 `DUCK TIME` controls the release time of the ducking curve.
 
+The diagram below shows the effect of `DUCK TIME` on the ducking gain curve.
+The solid line represents `DUCK TIME` set to 190ms,
+and the faded lines show progressively shorter values down to 51ms.
+
+```{image} ducking_release.svg
+:width: 75%
+:align: center
+```
+
 #### `DUCK SMTH`
 
 `DUCK SMTH` controls the smoothing of the ducking curve, which is more pronounced
@@ -304,6 +330,16 @@ during the attack section, when the volume is abruptly cut off.
 This variation allows to slightly let the transients of the external audio input
 pass through, while still keeping a pumping effect when the Duck band split
 is not used.
+
+The diagram below shows the effect of `DUCK SMTH` on the ducking gain curve.
+The solid line represents `DUCK SMTH` set to 10Hz,
+and the faded lines show progressively bigger values
+up to 100Hz.
+
+```{image} ducking_freq.svg
+:width: 75%
+:align: center
+```
 
 ### `DUCK BS`
 
