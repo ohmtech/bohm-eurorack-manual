@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 2026.1124.1700
+
+- New Groove `SEQ RESET` and `AUTO RESET` in HPN to restart the sequencer manually or automatically when the {guilabel}`CLOCK` stops
+- Reduce artifacts in Performer FX `BEAT ROLL` and `SLIP ROLL` when {guilabel}`HIT` is not perfectly regular
+- Fix a bug where `EXCL` reset some Performer settings to the model's defaults in live modes
+
+
 ## Version 2026.1021.1200
 
 - New HPN model
